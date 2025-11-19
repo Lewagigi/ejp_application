@@ -32,7 +32,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
-  // 👉 Voici ton widget ajouté (avec texte en gras et grand)
   Widget customContent(BuildContext context) {
     return Container(
       padding: const EdgeInsets.all(57.0),
@@ -40,8 +39,8 @@ class _MyHomePageState extends State<MyHomePage> {
       child: const Text(
         'Bienvenue dans ton application Prodige !',
         style: TextStyle(
-          fontSize: 54, // texte plus grand
-          fontWeight: FontWeight.bold, // texte en gras
+          fontSize: 54,
+          fontWeight: FontWeight.bold,
         ),
         textAlign: TextAlign.left,
       ),
@@ -60,7 +59,6 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const SizedBox(height: 20),
-            // 👉 Appel du widget que tu voulais ajouter
             customContent(context),
           ],
         ),
